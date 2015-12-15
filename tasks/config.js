@@ -8,29 +8,29 @@ var sources = {
 module.exports = {
   i18n: {
     src: sources.code,
-    textdomain: "genesis-starter-theme",
-    dest: "../languages/",
-    message: "i18n tasks complete."
+    textdomain: 'genesis-starter-theme',
+    dest: '../languages/',
+    message: 'i18n tasks complete.'
   },
   images: {
     src: sources.images,
-    dest: "../images/",
-    message: "Images task complete."
+    dest: '../images/',
+    message: 'Images task complete.'
   },
   scripts: {
     src: sources.scripts,
-    output: "theme.js",
-    dest: "../js/",
-    message: "Javascript tasks complete."
+    output: 'theme.js',
+    dest: '../js/',
+    message: 'Javascript tasks complete.'
   },
   server: {
-    url: "localhost.dev"
+    url: 'localhost.dev'
   },
   styles: {
     src: sources.styles,
-    output: "compressed",
-    dest: "../",
-    message: "Stylesheet compiled & saved."
+    output: 'compressed',
+    dest: '../',
+    message: 'Stylesheet compiled & saved.'
   },
   watch: {
     code: sources.code,
