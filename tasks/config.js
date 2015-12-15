@@ -1,26 +1,26 @@
 var sources = {
   code: "**/*.php",
-  images: "assets/images/**/*",
-  scripts: "assets/js/**/*.js",
-  styles: "assets/scss/**/*.scss"
+  images: "../assets/images/**/*",
+  scripts: "../assets/js/**/*.js",
+  styles: "../assets/scss/**/*.scss"
 };
 
 module.exports = {
   i18n: {
     src: sources.code,
     textdomain: "genesis-starter-theme",
-    dest: "./languages/",
+    dest: "../languages/",
     message: "i18n tasks complete."
   },
   images: {
     src: sources.images,
-    dest: "./images/",
+    dest: "../images/",
     message: "Images task complete."
   },
   scripts: {
     src: sources.scripts,
     output: "theme.js",
-    dest: "./js/",
+    dest: "../js/",
     message: "Javascript tasks complete."
   },
   server: {
@@ -29,7 +29,7 @@ module.exports = {
   styles: {
     src: sources.styles,
     output: "compressed",
-    dest: "./",
+    dest: "../",
     message: "Stylesheet compiled & saved."
   },
   watch: {
