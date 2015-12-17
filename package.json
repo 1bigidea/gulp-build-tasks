@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Standard set of Gulp build tasks for use in my themes.",
   "repository": "https://github.com/gulp-build-tasks.git",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
