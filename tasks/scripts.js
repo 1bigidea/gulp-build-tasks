@@ -20,7 +20,7 @@ gulp.task( 'scripts' , function() {
             .pipe( concat( config.output ) )
         .pipe( sourcemaps.write() )
         .pipe( gulp.dest( config.dest ) )
-        .pipe( notify( { message: 'config.message' } ) )
+        .pipe( notify( { message: config.message } ) )
         .pipe( browserSync.stream() );
 
 } );
