@@ -29,12 +29,16 @@ gulp.task( 'styles' , function() {
 
     return gulp
     .src( config.src )
-        .pipe( plumber() )
+        .pipe(plumber({
+            handleError: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
         .pipe( sourcemaps.init() )
             .pipe( sass({outputStyle: config.output }) )
             .pipe( postcss( postProcessors ) )
         .pipe( sourcemaps.write( '.' ) )
-        .pipe( plumber.stop() )
         .pipe( gulp.dest( config.dest ) )
         .pipe( notify( { message: config.message } ) )
         .pipe( browserSync.stream() );
