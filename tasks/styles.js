@@ -9,6 +9,7 @@ var sass        = require( 'gulp-sass' ),
     postcss     = require( 'gulp-postcss' ),
     mqpacker    = require( 'css-mqpacker' ),
     pxtorem     = require( 'postcss-pxtorem' ),
+    autoprefix  = require( 'autoprefixer'),
     browserSync = require( 'browser-sync' ).create();
 
 var config      = require( '../tasks/config' ).styles;
@@ -20,11 +21,14 @@ gulp.task( 'styles' , function() {
         mqpacker({
             sort: true
         }),
-        pxtorem( {
+        autoprefix({
+            browsers: ['last 2 versions']
+        }),
+        pxtorem({
             root_value: 16,
             replace: false,
             media_query: true
-        } )
+        })
     ];
 
     return gulp
