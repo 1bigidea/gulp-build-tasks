@@ -1,8 +1,8 @@
 var sources = {
   code: "**/*.php",
-  images: "../assets/images/**/*",
-  scripts: "../assets/js/**/*.js",
-  styles: "../assets/scss/**/*.scss"
+  images: "../develop/images/**/*",
+  scripts: "../develop/js/**/*.js",
+  styles: "../develop/scss/**/*.scss"
 };
 
 module.exports = {
