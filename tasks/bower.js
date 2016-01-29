@@ -7,6 +7,7 @@ var bower        = require( 'gulp-bower' );
 // Run Bower Install
 gulp.task( 'bower' , function() {
 
-    return bower();
+    // Change current working directory to one level above our `/tasks/` subdir (ie main theme root).
+    return bower({cwd: '../'});
 
 });
