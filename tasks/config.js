@@ -14,13 +14,13 @@ module.exports = {
   },
   images: {
     src: sources.images,
-    dest: '../images/',
+    dest: '../assets/images/',
     message: 'Images task complete.'
   },
   scripts: {
     src: sources.scripts,
     output: 'theme.js',
-    dest: '../js/',
+    dest: '../assets/js/',
     message: 'Javascript tasks complete.'
   },
   server: {

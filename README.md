@@ -2,11 +2,11 @@
 My workflow involves using Gulp to automate certain tasks on almost all theme builds I carry out. This includes:
 
 * Installing bower components.
-* Linting and compiling SCSS.
+* Compiling SCSS.
 * Optimizing images.
-* Creating language .pot files. 
+* Creating language .pot files.
 * Concatenating and linting JavaScript.
-* Adding BrowserSync support allowing.
+* Adding BrowserSync support allowing instant reload in web browser.
 
 Until now I have just included these tasks within my starter theme, however it would make more sense to separate these tasks into their own repository so they can be worked on and improved from one central location, without having to then update multiple theme builds.
 
