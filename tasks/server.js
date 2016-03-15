@@ -9,7 +9,7 @@ var config 		= require( '../tasks/config' ).server;
 // Set up BrowserSync.
 gulp.task( 'server' , function() {
 
-    // Initiate BrowserSync using the local url (defined above).
+    // Initiate BrowserSync using the local url (defined in config.js).
     browserSync.init({
         proxy: config.url
     });
