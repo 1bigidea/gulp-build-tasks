@@ -13,7 +13,10 @@ var config      = require( '../tasks/config' ).scripts;
 // Scripts task.
 gulp.task( 'scripts' , function() {
 
-    return gulp.src( config.src )
+    return gulp.src( [
+      // Be careful of the order here, as these source files will be concatenated into the final scripts file.
+      '../develop/js/main.js'
+    ] )
         .pipe( jshint( '.jshintrc' ) )
         .pipe( jshint.reporter( 'default' ) )
         .pipe( sourcemaps.init() )
