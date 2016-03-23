@@ -19,7 +19,7 @@ The following tasks are available:
 * `gulp` is a default watch tasks. Changes within source directories will result in the appropriate task being run and files output in destination directory.
 * `gulp serve` is a default watch task, but initializes BrowserSync with the proxy URL entered in `config.js`.
 * `gulp build` runs all tasks (typically would be used on first install to get everything from `/assets/` to the theme root.
-* `gulp bower` will check for a bower.json in the theme root (one level up) and run `bower install`.
+* `gulp bower` will check for a bower.json in the theme root (one level up) and run `bower install` (this task now runs as a dependency of the `styles` task).
 * `gulp scripts` concatenates all scripts from `/develop/js/` to a single file (default `theme.js`) in a `/js/` folder in the theme root.
 * `gulp images` optimizes and outputs all images from `/develop/images/` to `/images/` within the theme.
 * `gulp styles` compiles SCSS in `/develop/scss/` to `style.css` and `style.css.map`.

@@ -7,4 +7,4 @@ requireDir('./tasks', { recurse: true } );
 // Default Tasks.
 gulp.task( 'default' , [ 'watch' ] );
 gulp.task( 'serve' , [ 'server', 'watch' ] );
-gulp.task( 'build' , [ 'scripts', 'images','bower', 'styles', 'i18n' ] )
+gulp.task( 'build' , [ 'scripts', 'images', 'styles', 'i18n' ] );
