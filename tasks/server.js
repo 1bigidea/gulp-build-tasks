@@ -1,13 +1,13 @@
 // Include Gulp.
-var gulp        = require( 'gulp' );
+var gulp = require('gulp');
 
 // Include Plugins.
-var browserSync = require( 'browser-sync' ).create();
+var browserSync = require('browser-sync').create();
 
-var config 		= require( '../tasks/config' ).server;
+var config = require('../tasks/config').server;
 
 // Set up BrowserSync.
-gulp.task( 'server' , function() {
+gulp.task('server', function () {
 
     // Initiate BrowserSync using the local url (defined in config.js).
     browserSync.init({
