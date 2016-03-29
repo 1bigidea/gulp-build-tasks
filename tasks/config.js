@@ -1,9 +1,9 @@
 var sources = {
     root: "../",
     code: "../**/*.php",
-    images: "../assets/images/**/*",
-    scripts: "../assets/js/**/*.js",
-    styles: "../assets/scss/**/*.scss"
+    images: "../develop/images/**/*",
+    scripts: "../develop/js/**/*.js",
+    styles: "../develop/scss/**/*.scss"
 };
 
 module.exports = {
@@ -15,14 +15,14 @@ module.exports = {
     },
     images: {
         src: sources.images,
-        dest: '../images/',
+        dest: '../assets/images/',
         message: 'Images task complete.'
     },
     scripts: {
         src: sources.scripts,
         lint: sources.root + '.jshintrc',
         output: 'theme.js',
-        dest: '../js/',
+        dest: '../assets/js/',
         message: 'Javascript tasks complete.'
     },
     server: {
