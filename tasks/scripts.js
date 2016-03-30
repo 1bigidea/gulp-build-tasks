@@ -3,7 +3,6 @@ var gulp = require('gulp');
 
 // Include Plugins.
 var sourcemaps = require('gulp-sourcemaps'),
-    jshint = require('gulp-jshint'),
     notify = require('gulp-notify'),
     concat = require('gulp-concat'),
     browserSync = require('browser-sync').create();
