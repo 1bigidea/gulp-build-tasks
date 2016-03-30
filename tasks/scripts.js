@@ -11,13 +11,11 @@ var sourcemaps = require('gulp-sourcemaps'),
 var config = require('../tasks/config').scripts;
 
 // Scripts task.
-gulp.task('scripts', function () {
+gulp.task('scripts', ['jshint'], function () {
 
     return gulp.src([
             '../develop/js/main.js'
         ])
-        .pipe(jshint(config.lint))
-        .pipe(jshint.reporter('default'))
         .pipe(sourcemaps.init())
         .pipe(concat(config.output))
         .pipe(sourcemaps.write())

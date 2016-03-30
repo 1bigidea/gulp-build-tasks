@@ -15,7 +15,7 @@ var sass = require('gulp-sass'),
 var config = require('../tasks/config').styles;
 
 // Styles tasks.
-gulp.task('styles', function () {
+gulp.task('styles', ['scsslint'], function () {
 
     var postProcessors = [
         mqpacker({
